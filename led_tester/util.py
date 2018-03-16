@@ -17,7 +17,7 @@ def parsefile(input):
                 pat = re.compile(".*(turn on|turn off|switch)\s*([+-]?\d+)\s*,\s*([+-]?\d+)\s*through\s*([+-]?\d+)\s*,\s*([+-]?\d+).*") 
                 m = pat.match(line)
                 print(m.groups())
-                instructions.append(line)
+                instructions.append(m.groups())
         return N, instructions
     else:
         # read the disk
@@ -31,7 +31,7 @@ def parsefile(input):
                 pat = re.compile(".*(turn on|turn off|switch)\s*([+-]?\d+)\s*,\s*([+-]?\d+)\s*through\s*([+-]?\d+)\s*,\s*([+-]?\d+).*") 
                 m = pat.match(line)
                 print(m.groups())
-                instructions.append(line)
+                instructions.append(m.groups())
         # No code yet
         return  N, instructions
     return
