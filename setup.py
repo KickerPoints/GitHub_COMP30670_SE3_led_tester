@@ -35,7 +35,7 @@ setup(
     description="LED Tester Assingment 3 COMP30670",
     entry_points={
         'console_scripts': [
-            'led_tester=led_tester.cli:main',
+            'solve_led=led_tester.cli:main',
         ],
     },
     install_requires=requirements,
@@ -43,8 +43,8 @@ setup(
     long_description=readme + '\n\n' + history,
     include_package_data=True,
     keywords='led_tester',
-    name='led_tester',
-    packages=find_packages(include=['led_tester']),
+    name='solve_led',
+    packages=find_packages(),
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,
